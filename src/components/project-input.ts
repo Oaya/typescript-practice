@@ -1,10 +1,10 @@
-import { Component } from "./base.js";
+import { Component } from "./base";
 import {
   Validatable,
   validate,
-} from "../util/validation.js";
-import { Autobind } from "../decorators/autobind.js";
-import { projectState } from "../state/project-state.js";
+} from "../util/validation";
+import { Autobind } from "../decorators/autobind";
+import { projectState } from "../state/project-state";
 
 //ProjectInput Class//
 export class ProjectInput extends Component<

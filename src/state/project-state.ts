@@ -1,7 +1,7 @@
 import {
   Project,
   ProjectStatus,
-} from "../models/project.js";
+} from "../models/project";
 
 //Project State Management//
 type Listener<T> = (items: T[]) => void;
