@@ -193,6 +193,14 @@ class ProjectItem extends Component<
 > {
   private project: Project;
 
+  get persons() {
+    if (this.project.people === 1) {
+      return "1 person";
+    } else {
+      return `${this.project.people} persons`;
+    }
+  }
+
   constructor(hostId: string, project: Project) {
     super(
       "single-project",
@@ -213,8 +221,7 @@ class ProjectItem extends Component<
 
     this.element.querySelector(
       "h3"
-    )!.textContent =
-      this.project.people.toString();
+    )!.textContent = this.persons + " assigned";
 
     this.element.querySelector("p")!.textContent =
       this.project.description;
